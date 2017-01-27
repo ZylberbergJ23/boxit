@@ -1,6 +1,8 @@
 class Boxit{
   constructor(){
     this.board = new Board()
+    this.lines = [[0,0,0,0], [0,0,0,0], [0,0,0,0]]
+    this.columns = [[0,0,0], [0,0,0], [0,0,0], [0,0,0]]
     this.playCount = 0
   }
 
@@ -9,15 +11,8 @@ class Boxit{
   }
 
   addEventHandler() {
-    $('.line').on('click', function() {console.log(this)
-      $(this).css({"background-color": "#662b22"})
-    })
-    $('.column').on('click', function() {console.log(this)
-      $(this).css({"background-color": "#662b22"})
-    })
-    $('.lastcolumn').on('click', function() {console.log(this)
-      $(this).css({"background-color": "#662b22"})
-    })
+    lineClickListener.bind(this)()
+    columnClickListener.bind(this)()
   }
 
 }
