@@ -5,22 +5,22 @@ class Board{
 
   render(callback){
     let $board = $('#board')
-    this.dots.forEach((row, x) => {
-      $board.append(`<div class="hrow" id='${x}' style="margin: 0px; height: 22px;">`)
+    this.dots.forEach((column, y) => {
+      $board.append(`<div class="hrow" id='${y}' style="margin: 0px; height: 22px;">`)
       let $row = $('.hrow:last-child')
-      row.forEach((column, y) =>{
-        if(y === 3){
+      column.forEach((dot, x) =>{
+        if(x === 3){
           $row.append(`<div class="dot" style="margin: 0px; height: 22px;"> </div>`)
         }else{
           $row.append(`<div class="dot" style="margin: 0px; height: 22px;">  </div> <div class="line" id="${x}-${y}"> BOX IT! </div>`)
         }
       })
       $board.append(`</div>`)
-      $board.append(`<div class="vrow" id='${x}' style="margin: 0px;">`)
+      $board.append(`<div class="vrow" id='${y}' style="margin: 0px;">`)
 
-      if(x != 3){
+      if(y != 3){
         let $vrow = $('.vrow:last-child')
-        $vrow.append(`<div class="column" id="${x}-${1}">  </div><div class="column" id="${x}-${1}">  </div><div class="column" id="${x}-${1}">  </div><div class="lastcolumn" id="${x}-${1}">  </div>`)
+        $vrow.append(`<div class="column" id="${0}-${y}">  </div><div class="column" id="${1}-${y}">  </div><div class="column" id="${2}-${y}">  </div><div class="lastcolumn" id="${3}-${y}">  </div>`)
       }
     })
     callback()
