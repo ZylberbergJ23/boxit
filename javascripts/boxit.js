@@ -4,8 +4,8 @@ class Boxit{
     this.lines = [[0,0,0,0], [0,0,0,0], [0,0,0,0]]
     this.columns = [[0,0,0], [0,0,0], [0,0,0], [0,0,0]]
     this.playCount = 0
-    this.player1 = new Player("patty")
-    this.player2 = new Player("jonathan")
+    this.player1 = new Player("prompt('What is your name?')")
+    this.player2 = new Player("prompt('What is your name?')")
   }
 
   render(){
@@ -23,6 +23,15 @@ class Boxit{
     }
     else {
       return this.player2
+    }
+  }
+
+  otherPlayer(){
+    if (this.playCount % 2 === 0){
+      return this.player2
+    }
+    else {
+      return this.player1
     }
   }
 

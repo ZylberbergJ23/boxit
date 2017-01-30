@@ -6,13 +6,13 @@ class Board{
   render(callback){
     let $board = $('#board')
     this.dots.forEach((column, y) => {
-      $board.append(`<div class="hrow" id='${y}' style="margin: 0px; height: 22px;">`)
+      $board.append(`<div class="hrow" id='${y}'>`)
       let $row = $('.hrow:last-child')
       column.forEach((dot, x) =>{
         if(x === 3){
-          $row.append(`<div class="dot" style="margin: 0px; height: 22px;"> </div>`)
+          $row.append(`<div class="dot" style="margin: 0%; height: 100%;"> </div>`)
         }else{
-          $row.append(`<div class="dot" style="margin: 0px; height: 22px;">  </div> <div class="line" id="${x}-${y}"> BOX IT! </div>`)
+          $row.append(`<div class="dot" style="margin: 0%; height: 100%;">  </div> <div class="line" id="${x}-${y}"> BOX IT! </div>`)
         }
       })
       $board.append(`</div>`)

@@ -65,7 +65,8 @@ function isBox(columnsToCheck){
 
   if (this.columns[x][y] === 1 && this.lines[x][y] === 1 && this.columns[x+1][y] === 1 && this.lines[x][y+1] === 1){
     this.playerTurn().score += 1
-    alert(`${this.playerTurn().name}: ${this.playerTurn().score}`)
+    alert(`${this.playerTurn().name}: ${this.playerTurn().score}
+${this.otherPlayer().name}: ${this.otherPlayer().score}`)
     boxed = true
   }
 
@@ -74,7 +75,8 @@ function isBox(columnsToCheck){
     y = column2[1]
     if (this.columns[x][y] === 1 && this.lines[x][y] === 1 && this.columns[x+1][y] === 1 && this.lines[x][y+1] === 1){
       this.playerTurn().score += 1
-      alert(`${this.playerTurn().name}: ${this.playerTurn().score}`)
+      alert(`${this.playerTurn().name}: ${this.playerTurn().score}
+${this.otherPlayer().name}: ${this.otherPlayer().score}`)
       boxed = true
     }
   }

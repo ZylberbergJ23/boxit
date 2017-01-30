@@ -14,7 +14,7 @@ nav{
   flex-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 40px;
+  margin-top: 10%;
   background-image: url(http://tonereport.com/uploads/img/MAHOGANY.jpg);
 }
 
@@ -39,9 +39,9 @@ nav{
 
 .column{
   float: left;
-  width: 21px;
-  height: 145px;
-  margin-right: 240px;
+  width: 2.6%;
+  height: 100%;
+  margin-right: 29.76%;
   background-color: #662b22
   opacity: 0;
 }
@@ -52,8 +52,8 @@ nav{
 
 .lastcolumn{
   float: left;
-  width: 22.8px;
-  height: 145px;
+  width: 2.9%;
+  height: 20vh;
   background-color: #662b22
   opacity: 0;
 }
@@ -70,6 +70,6 @@ nav{
 
   background-color: black;
   float: left;
-  font-size: 50px;
+
   /*// #ee6e73*/
 }
