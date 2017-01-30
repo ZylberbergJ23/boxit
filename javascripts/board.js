@@ -12,7 +12,7 @@ class Board{
         if(x === 3){
           $row.append(`<div class="dot" style="margin: 0%; height: 100%;"> </div>`)
         }else{
-          $row.append(`<div class="dot" style="margin: 0%; height: 100%;">  </div> <div class="line" id="${x}-${y}"> BOX IT! </div>`)
+          $row.append(`<div class="dot" style="margin: 0%; height: 100%;">  </div> <div class="line" id="${x}-${y}">` + '</div>')
         }
       })
       $board.append(`</div>`)
@@ -20,7 +20,7 @@ class Board{
 
       if(y != 3){
         let $vrow = $('.vrow:last-child')
-        $vrow.append(`<div class="column" id="${0}-${y}">  </div><div class="column" id="${1}-${y}">  </div><div class="column" id="${2}-${y}">  </div><div class="lastcolumn" id="${3}-${y}">  </div>`)
+        $vrow.append(`<div class="column" id="${0}-${y}">  </div> <div class="box" id="${0}${y}"> </div> <div class="column" id="${1}-${y}">  </div> <div class="box" id="${1}${y}"> </div> <div class="column" id="${2}-${y}">  </div> <div class="box" id="${2}${y}"> </div> <div class="lastcolumn" id="${3}-${y}">  </div>`)
       }
     })
     callback()

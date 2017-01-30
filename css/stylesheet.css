@@ -7,6 +7,7 @@ nav{
   background-color: black;
   text-align: center;
   font-family: "Georgia", Times, serif;
+  position: 0;
 }
 
 #board {
@@ -14,7 +15,7 @@ nav{
   flex-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 10%;
+  margin-top: .5%;
   background-image: url(http://tonereport.com/uploads/img/MAHOGANY.jpg);
 }
 
@@ -28,48 +29,60 @@ nav{
 
 .line{
   float: left;
-  width: 29.6%;
-  background-color: #662b22
-  opacity: 0;
+  width: 30%;
+  height: 2.7vh;
 }
 
 .line:hover{
   background-color: #662b22;
+  opacity: 0.5;
 }
 
 .column{
   float: left;
-  width: 2.6%;
+  width: 2.5%;
   height: 100%;
-  margin-right: 29.76%;
-  background-color: #662b22
-  opacity: 0;
 }
 
 .column:hover{
   background-color: #662b22;
+  opacity: 0.5;
 }
 
 .lastcolumn{
   float: left;
-  width: 2.9%;
+  width: 2.5%;
   height: 20vh;
-  background-color: #662b22
-  opacity: 0;
 }
 
 .lastcolumn:hover{
   background-color: #662b22;
+  opacity: 0.5;
 }
 
 .dot {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 2.8%;
-
+  width: 2.5%;
   background-color: black;
+  opacity: 0.8;
   float: left;
 
   /*// #ee6e73*/
+}
+
+.box {
+  float: left;
+  width: 30%;
+  height: 100%;
+  opacity: 0.25;
+}
+
+.scoreboard {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  font-family: "Georgia", Times, serif;
+  margin-top: 2%
 }
