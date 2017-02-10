@@ -26,7 +26,8 @@
     </div>
 
     <footer>
-      Designs by Christina Entcheva
+
+      Designs by Christina Entcheva.
     </footer>
   </body>
 </html>
